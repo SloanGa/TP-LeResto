@@ -1,0 +1,30 @@
+.header {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $color1;
+    font-family: $fontA;
+    font-size: 3rem;
+    font-weight: normal;
+    height: 30px;
+  }
+
+  span {
+    color: $white1;
+    font-family: $fontP;
+    font-size: 4rem;
+    height: 50px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $white2;
+    font-family: $fontR;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 200px;
+  }
+}

@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+
+  .resto {
+    color: $white1;
+    font-family: $fontA;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $white2;
+    font-family: $fontR;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    li {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    letter-spacing: 15px;
+    color: $white1;
+    i {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
