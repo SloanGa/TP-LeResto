@@ -1,0 +1,58 @@
+.menu {
+  position: relative;
+  .menunav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: $black2;
+    h2 {
+      font-family: $fontA;
+      font-size: 2.1rem;
+      font-weight: lighter;
+      color: $color1;
+      padding: 40px 0;
+      height: 20px;
+    }
+
+    .couvert {
+      img {
+        padding: 20px 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+
+      li {
+        font-family: $fontR;
+        color: $white1;
+        font-size: 1.1rem;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .menuzi {
+    min-height: 300px;
+    width: 50%;
+    background: $white1;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menubg {
+    min-height: 500px;
+    background: url(/assets/img/bg-menu-01.jpg) center/cover;
+  }
+}

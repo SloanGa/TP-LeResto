@@ -38,7 +38,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: rgb(183, 186, 187);
+  color: rgb(245, 245, 245);
   font-family: Roboto, sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -64,9 +64,10 @@ nav .logo i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header h1 {
-  color: rgb(139, 82, 8);
+  color: rgb(209, 130, 27);
   font-family: Allura, sans-serif;
   font-size: 3rem;
   font-weight: normal;
@@ -79,10 +80,126 @@ nav .logo i:hover {
   height: 50px;
   text-transform: uppercase;
 }
+.header img {
+  position: absolute;
+  padding-top: 60px;
+}
 .header p {
-  color: rgb(183, 186, 187);
+  color: rgb(245, 245, 245);
   font-family: Roboto, sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-top: 200px;
+  margin-top: 160px;
+}
+
+.headerbottom {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.headerbottom .headerbleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 2%;
+  border: 1px dashed rgb(209, 130, 27);
+  background: rgb(245, 245, 245);
+}
+.headerbottom .headerbleft h2 {
+  font-family: Allura, sans-serif;
+  font-size: 2.1rem;
+  font-weight: lighter;
+  color: rgb(209, 130, 27);
+  padding: 40px 0;
+  height: 20px;
+}
+.headerbottom .headerbleft span {
+  height: 30px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.headerbottom .headerbleft p {
+  min-width: 200px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  padding: 0 1%;
+}
+.headerbottom .headerbleft .couvert img {
+  padding: 20px 0;
+}
+.headerbottom .headerbleft .chef img {
+  height: 140px;
+  width: 100px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-radius: 50%;
+}
+.headerbottom .headerbleft .name {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: Poppins, sans-serif;
+}
+.headerbottom .headerbleft .prof {
+  color: rgba(128, 128, 128, 0.518);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+}
+.headerbottom .headerbright {
+  min-height: 500px;
+  background: url(/assets/img/store-01.jpg) center/cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.menu {
+  position: relative;
+}
+.menu .menunav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background: rgb(37, 37, 37);
+}
+.menu .menunav h2 {
+  font-family: Allura, sans-serif;
+  font-size: 2.1rem;
+  font-weight: lighter;
+  color: rgb(209, 130, 27);
+  padding: 40px 0;
+  height: 20px;
+}
+.menu .menunav .couvert img {
+  padding: 20px 0;
+}
+.menu .menunav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.menu .menunav ul li {
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 1.1rem;
+}
+.menu .menunav ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+.menu .menuzi {
+  min-height: 300px;
+  width: 50%;
+  background: white;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu .menubg {
+  min-height: 500px;
+  background: url(/assets/img/bg-menu-01.jpg) center/cover;
 }/*# sourceMappingURL=style.css.map */
