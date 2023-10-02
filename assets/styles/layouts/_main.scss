@@ -3,8 +3,8 @@
   .menunav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 30px;
     min-height: 500px;
     background: $black2;
     h2 {
@@ -42,17 +42,62 @@
   }
 
   .menuzi {
-    min-height: 300px;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 750px;
+    width: 55%;
     background: $white1;
     position: absolute;
-    top: 39%;
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
+    border-top: 4px solid $color1;
+
+    .menubox {
+      display: flex;
+      align-items: center;
+      padding: 30px 5%;
+      position: relative;
+
+      &::after {
+        content: "";
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+        width: 90%;
+        position: absolute;
+        top: 90%;
+      }
+
+      .descriptif {
+        width: 600px;
+      }
+
+      img {
+        border-radius: 50%;
+      }
+
+      h4 {
+        padding: 0 10%;
+        font-family: $fontP;
+        font-weight: lighter;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+      }
+
+      p {
+        padding: 0 10%;
+        font-family: $fontR;
+      }
+
+      .price {
+        color: $color1;
+        font-family: $fontP;
+        font-size: 1.2rem;
+      }
+    }
   }
 
   .menubg {
-    min-height: 500px;
+    min-height: 600px;
     background: url(/assets/img/bg-menu-01.jpg) center/cover;
   }
 }

@@ -58,29 +58,169 @@
         <div class="headerbright">
         </div>
     </div>
-    <header>
+    </header>
 
 
-        <main>
-            <div class="menu">
-                <div class="menunav">
-                    <h2>Decouvrez</h2>
-                    <div class="couvert"><img src="./assets/img/ic-plate.png" alt="couvert"></div>
+    <main>
+        <div class="menu">
+            <div class="menunav">
+                <h2>Decouvrez</h2>
+                <div class="couvert"><img src="./assets/img/ic-plate.png" alt="couvert"></div>
 
-                    <ul>
-                        <li>Petit-dejeuner</li>
-                        <li>Dejeuner</li>
-                        <li>Dîner</li>
-                        <li>Boissons</li>
-                        <li>Autres</li>
-                    </ul>
-                </div>
-                <div class="menuzi">
-
-                </div>
-                <div class="menubg"></div>
+                <ul>
+                    <li>Petit-dejeuner</li>
+                    <li>Dejeuner</li>
+                    <li>Dîner</li>
+                    <li>Boissons</li>
+                    <li>Autres</li>
+                </ul>
             </div>
-        </main>
+            <div class="menuzi">
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-01.jpg" alt="Pâtes aux champignons">
+                    <div class="descriptif">
+                        <h4>Pâtes aux champignon</h4>
+                        <p>Pâtes / Champignons / Ail </p>
+                    </div>
+                    <div class="price">12€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-02.jpg" alt="Pomme de terres à l'ail">
+                    <div class="descriptif">
+                        <h4>Pomme de terres à l'ail</h4>
+                        <p>Pommes de terres / Huile d'olive / Ail </p>
+                    </div>
+                    <div class="price">22€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-03.jpg" alt="Thon rôtie">
+                    <div class="descriptif">
+                        <h4>Riz et Thon rôtie</h4>
+                        <p>Thon / Pommes de terres / Riz </p>
+                    </div>
+                    <div class="price">15€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-04.jpg" alt="Rôtie de porc">
+                    <div class="descriptif">
+                        <h4>Rôtie de porc (4 pièces)</h4>
+                        <p>Porc / Légumes / Ail </p>
+                    </div>
+                    <div class="price">18€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-05.jpg" alt="Poulet frit">
+                    <div class="descriptif">
+                        <h4>Poulet frit</h4>
+                        <p>Poulet / Huile d'olive / Sel </p>
+                    </div>
+                    <div class="price">20€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-06.jpg" alt="Crabe au curry">
+                    <div class="descriptif">
+                        <h4>Crabe sauce curry</h4>
+                        <p>Crabe / Pomme de terres / Riz </p>
+                    </div>
+                    <div class="price">14€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-07.jpg" alt="Steack de saumon">
+                    <div class="descriptif">
+                        <h4>Steack de saumon</h4>
+                        <p>Saumon / Huile / Ail </p>
+                    </div>
+                    <div class="price">16€</div>
+                </div>
+                <div class="menubox">
+                    <img src="/assets/img/dish-item-08.jpg" alt="Gratin de pommes de terres">
+                    <div class="descriptif">
+                        <h4>Gratin de pommes de terres</h4>
+                        <p>Pommes de terres / Crème / Fromage </p>
+                    </div>
+                    <div class="price">25€</div>
+                </div>
+
+            </div>
+            <div class="menubg"></div>
+        </div>
+
+        <section>
+            <div class="bottom">
+                <div class="bottomtop">
+                    <div class="topleft">
+                        <h2>Heures</h2>
+                        <span>d'ouvertures</span>
+                        <div class="couvert"><img src="./assets/img/ic-plate.png" alt="couvert"></div>
+                        <h3>Lundi à Vendredi</h3>
+                        <p>De 07h00 à 11h00 (Petit-Dejeuner)</p>
+                        <p>De 11h00 à 22h00 (Dejeuner/Dîner)</p>
+
+                        <h3>Samedi et Dimanche</h3>
+                        <p>De 00h00 à 13h00 (Bruch)</p>
+                        <p>De 13h00 à 21h00 (Dejeuner/Dîner)</p>
+                        <h3>+15 890 979 25 52</h3>
+                    </div>
+                    <div class="topright">
+                        <h2>Réservation</h2>
+                        <span>En ligne</span>
+                        <div class="couvert"><img src="./assets/img/ic-plate.png" alt="couvert"></div>
+                        <form action="resa">
+
+                            <input list="browsers" name="personnes" id="personnes" placeholder="Personnes">
+                            <datalist id="browsers">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6 et plus">
+                            </datalist>
+
+                            <input type="date" id="dates" value="2023-02-10">
+                            <input type="time" id="times">
+                            <input type="text" id="Name" placeholder="Nom">
+                            <input type="tel" id="telephone" placeholder="Telephone">
+                            <input type="email" id="mail" placeholder="Email">
+                        </form>
+                        <button>Reservez !</button>
+
+                    </div>
+                </div>
+                <div class="bottomcenter">
+                    <h2>Nos événements</h2>
+                    <span>à venir</span>
+
+                    <div class="event">
+                        <div class="eventtop">
+                            <div class="eventimg"></div>
+                            <div class="eventbox">
+                                <p>Soirée spécial bière</p>
+                                <address>Restaurant The Resto De 22h00 à 06h00</address>
+                            </div>
+                        </div>
+                        <div class="eventbottom">
+                            <div class="eventimg"></div>
+                            <div class="eventbox">
+                                <p>Soirée spécial bière</p>
+                                <address>Restaurant The Resto De 22h00 à 06h00</address>
+                            </div>
+                        </div>
+                        <div class="eventright">
+
+                            <div class="eventrightbox">
+                                <p>Soirée spécial bière</p>
+                                <address>Restaurant The Resto De 22h00 à 06h00</address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombottom"></div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,0 +1,196 @@
+.bottom {
+  min-height: 1500px;
+  background: $black2;
+
+  .bottomtop {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 100px;
+
+    .topleft {
+      min-height: 600px;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px dashed rgba(128, 128, 128, 0.516);
+      h2 {
+        font-family: $fontA;
+        font-size: 2.1rem;
+        font-weight: lighter;
+        color: $color1;
+        padding: 40px 0;
+        height: 20px;
+      }
+
+      span {
+        padding-bottom: 70px;
+        height: 30px;
+        font-family: $fontP;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $white1;
+      }
+
+      h3 {
+        color: $color1;
+        font-family: $fontP;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding: 30px 0;
+      }
+
+      p {
+        color: $white1;
+        font-family: $fontR;
+        font-weight: normal;
+        line-height: 25px;
+      }
+    }
+
+    .topright {
+      background: $white1;
+      text-align: center;
+
+      h2 {
+        font-family: $fontA;
+        font-size: 4rem;
+        font-weight: lighter;
+        color: $color1;
+        padding: 40px 0;
+        height: 100px;
+      }
+
+      span {
+        padding-bottom: 70px;
+        height: 50px;
+        font-family: $fontP;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: black;
+      }
+
+      img {
+        padding: 20px 0;
+      }
+
+      form {
+        padding: 0 10%;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+
+        input {
+          padding-top: 30px;
+          padding-bottom: 15px;
+          border: none;
+          font-family: $fontR;
+
+          &:active {
+            border: none;
+          }
+
+          &:nth-child(1) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(2) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(3) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(4) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(5) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(6) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+          &:nth-child(7) {
+            border-bottom: 1px dashed rgba(128, 128, 128, 0.516);
+            width: 80%;
+          }
+        }
+      }
+
+      button {
+        padding: 20px 50px;
+        background: black;
+        border-radius: 50px;
+        color: $white1;
+        font-family: $fontR;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          background: $white1;
+          color: black;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  .bottomcenter {
+    .event {
+      padding: 0 7%;
+      min-height: 500px;
+      display: grid;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+        "a c"
+        "b c";
+      gap: 20px;
+    }
+
+    .eventtop {
+      background: $white1;
+      grid-area: a;
+      display: grid;
+      grid-template-columns: 30% 70%;
+
+      .eventbox {
+        height: 200px;
+      }
+
+      .eventimg {
+        height: 200px;
+        background: url(/assets/img/event-01.jpg) center/cover;
+      }
+    }
+
+    .eventbottom {
+      background: $white1;
+      grid-area: b;
+      display: grid;
+      grid-template-columns: 30% 70%;
+
+      .eventimg {
+        height: 200px;
+        background: url(/assets/img/event-02.jpg) center/cover;
+      }
+    }
+
+    .eventright {
+      grid-area: c;
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  }
+}
