@@ -146,9 +146,38 @@
   }
 
   .bottomcenter {
+
+    .contain{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    h2 {
+      font-family: $fontA;
+      font-size: 2.1rem;
+      font-weight: lighter;
+      color: $color1;
+      padding: 40px 0;
+      height: 20px;
+    }
+
+    p {
+      padding-bottom: 20px;
+      height: 30px;
+      font-family: $fontP;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: $white1;
+      }
+
+      img {
+        padding: 30px 0;
+      }
+  }
     .event {
       padding: 0 7%;
-      min-height: 500px;
+      
       display: grid;
 
       grid-template-columns: 50% 50%;
@@ -157,21 +186,68 @@
         "a c"
         "b c";
       gap: 20px;
-    }
+    
 
     .eventtop {
       background: $white1;
       grid-area: a;
       display: grid;
       grid-template-columns: 30% 70%;
+      position: relative;
+
+      &::before{
+        content: "08 Juillet";
+        text-align: center;
+        padding: 15px;
+        height: 40px;
+        width: 40px;
+        background: $black2;
+        color: $white1;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+
+      }
 
       .eventbox {
-        height: 200px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+
+
+        p{
+          font-family: $fontR;
+          padding: 20px 15px;
+          font-weight: lighter;
+        }
+
+        address{
+          font-family: $fontR;
+          color: rgba(0, 0, 0, 0.53);
+          padding: 0 15px;
+          padding-bottom: 20px;
+        }
+        
+        button{
+          font-family: $fontP;
+          border: none;
+          background: transparent;
+          text-transform: uppercase;
+          width: 50%;
+
+          &:hover{
+            cursor: pointer;
+            border: 1px solid $black2;
+          }
+
+        }
       }
 
       .eventimg {
-        height: 200px;
+        
         background: url(/assets/img/event-01.jpg) center/cover;
+        object-fit: fill;
       }
     }
 
@@ -180,9 +256,59 @@
       grid-area: b;
       display: grid;
       grid-template-columns: 30% 70%;
+      position: relative;
+
+      
+      &::before{
+        content: "15 Juillet";
+        text-align: center;
+        padding: 15px;
+        height: 40px;
+        width: 40px;
+        background: $black2;
+        color: $white1;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+
+      }
+
+      .eventbox {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+
+
+        p{
+          font-family: $fontR;
+          padding: 20px 15px;
+          font-weight: lighter;
+        }
+
+        address{
+          font-family: $fontR;
+          color: rgba(0, 0, 0, 0.53);
+          padding: 0 15px;
+          padding-bottom: 20px;
+        }
+        
+        button{
+          font-family: $fontP;
+          border: none;
+          background: transparent;
+          text-transform: uppercase;
+          width: 50%;
+
+          &:hover{
+            cursor: pointer;
+            border: 1px solid $black2;
+          }
+
+        }
+      }
 
       .eventimg {
-        height: 200px;
         background: url(/assets/img/event-02.jpg) center/cover;
       }
     }
@@ -193,4 +319,64 @@
       grid-template-columns: 30% 70%;
     }
   }
+
+  .eventright{
+    background: url(/assets/img/event-03.jpg) center/cover;
+    width: 90%;
+
+    .eventrightbox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      margin: 20%;
+      background: $white1;
+      position: relative;
+
+      &::before{
+        content: "15 Juillet";
+        text-align: center;
+        padding: 15px;
+        height: 40px;
+        width: 40px;
+        background: $black2;
+        color: $white1;
+        position: absolute;
+        top: 0%;
+       
+      }
+
+      p{
+        font-family: $fontR;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-weight: lighter;
+      }
+
+      address{
+        font-family: $fontR;
+        color: rgba(0, 0, 0, 0.53);
+        
+      }
+      
+      button{
+        font-family: $fontP;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        width: 50%;
+        margin-top: 50px;
+
+        &:hover{
+          cursor: pointer;
+          border: 1px solid $black2;
+        }
+
+      }
+
+
+    }
+  }
 }
+  }
