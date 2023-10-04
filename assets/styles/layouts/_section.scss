@@ -8,12 +8,13 @@
     padding: 100px;
 
     .topleft {
-      min-height: 600px;
+      height: 600px;
       background: black;
       display: flex;
       flex-direction: column;
       align-items: center;
       border: 1px dashed rgba(128, 128, 128, 0.516);
+
       h2 {
         font-family: $fontA;
         font-size: 2.1rem;
@@ -146,38 +147,38 @@
   }
 
   .bottomcenter {
-
-    .contain{
+    .contain {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-    h2 {
-      font-family: $fontA;
-      font-size: 2.1rem;
-      font-weight: lighter;
-      color: $color1;
-      padding: 40px 0;
-      height: 20px;
-    }
+      h2 {
+        font-family: $fontA;
+        font-size: 2.1rem;
+        font-weight: lighter;
+        color: $color1;
+        padding: 40px 0;
+        height: 20px;
+      }
 
-    p {
-      padding-bottom: 20px;
-      height: 30px;
-      font-family: $fontP;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      color: $white1;
+      p {
+        padding-bottom: 20px;
+        height: 30px;
+        font-family: $fontP;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $white1;
       }
 
       img {
         padding: 30px 0;
       }
-  }
+    }
     .event {
       padding: 0 7%;
-      
+      padding-bottom: 150px;
+      min-height: 400px;
       display: grid;
 
       grid-template-columns: 50% 50%;
@@ -186,197 +187,234 @@
         "a c"
         "b c";
       gap: 20px;
-    
 
-    .eventtop {
-      background: $white1;
-      grid-area: a;
-      display: grid;
-      grid-template-columns: 30% 70%;
-      position: relative;
+      .eventtop {
+        background: $white1;
+        grid-area: a;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        position: relative;
 
-      &::before{
-        content: "08 Juillet";
-        text-align: center;
-        padding: 15px;
-        height: 40px;
-        width: 40px;
-        background: $black2;
-        color: $white1;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-
-      }
-
-      .eventbox {
-        height: 140px;
-        display: flex;
-        flex-direction: column;
-
-
-        p{
-          font-family: $fontR;
-          padding: 20px 15px;
-          font-weight: lighter;
+        &::before {
+          content: "08 Juillet";
+          text-align: center;
+          padding: 15px;
+          height: 40px;
+          width: 40px;
+          background: $black2;
+          color: $white1;
+          position: absolute;
+          top: 50%;
+          left: 10%;
+          transform: translateY(-50%);
         }
 
-        address{
-          font-family: $fontR;
-          color: rgba(0, 0, 0, 0.53);
-          padding: 0 15px;
-          padding-bottom: 20px;
-        }
-        
-        button{
-          font-family: $fontP;
-          border: none;
-          background: transparent;
-          text-transform: uppercase;
-          width: 50%;
+        .eventbox {
+          height: 140px;
+          display: flex;
+          flex-direction: column;
 
-          &:hover{
-            cursor: pointer;
-            border: 1px solid $black2;
+          p {
+            font-family: $fontR;
+            padding: 20px 15px;
+            font-weight: lighter;
           }
 
-        }
-      }
-
-      .eventimg {
-        
-        background: url(/assets/img/event-01.jpg) center/cover;
-        object-fit: fill;
-      }
-    }
-
-    .eventbottom {
-      background: $white1;
-      grid-area: b;
-      display: grid;
-      grid-template-columns: 30% 70%;
-      position: relative;
-
-      
-      &::before{
-        content: "15 Juillet";
-        text-align: center;
-        padding: 15px;
-        height: 40px;
-        width: 40px;
-        background: $black2;
-        color: $white1;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-
-      }
-
-      .eventbox {
-        height: 140px;
-        display: flex;
-        flex-direction: column;
-
-
-        p{
-          font-family: $fontR;
-          padding: 20px 15px;
-          font-weight: lighter;
-        }
-
-        address{
-          font-family: $fontR;
-          color: rgba(0, 0, 0, 0.53);
-          padding: 0 15px;
-          padding-bottom: 20px;
-        }
-        
-        button{
-          font-family: $fontP;
-          border: none;
-          background: transparent;
-          text-transform: uppercase;
-          width: 50%;
-
-          &:hover{
-            cursor: pointer;
-            border: 1px solid $black2;
+          address {
+            font-family: $fontR;
+            color: rgba(0, 0, 0, 0.53);
+            padding: 0 15px;
+            padding-bottom: 20px;
           }
 
+          button {
+            font-family: $fontP;
+            border: none;
+            background: transparent;
+            text-transform: uppercase;
+            width: 50%;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .eventimg {
+          background: url(/assets/img/event-01.jpg) center/cover;
+          object-fit: fill;
         }
       }
 
-      .eventimg {
-        background: url(/assets/img/event-02.jpg) center/cover;
+      .eventbottom {
+        background: $white1;
+        grid-area: b;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        position: relative;
+
+        &::before {
+          content: "15 Juillet";
+          text-align: center;
+          padding: 15px;
+          height: 40px;
+          width: 40px;
+          background: $black2;
+          color: $white1;
+          position: absolute;
+          top: 50%;
+          left: 10%;
+          transform: translateY(-50%);
+        }
+
+        .eventbox {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-family: $fontR;
+            padding: 20px 15px;
+            font-weight: lighter;
+          }
+
+          address {
+            font-family: $fontR;
+            color: rgba(0, 0, 0, 0.53);
+            padding: 0 15px;
+            padding-bottom: 20px;
+          }
+
+          button {
+            font-family: $fontP;
+            border: none;
+            background: transparent;
+            text-transform: uppercase;
+            width: 50%;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .eventimg {
+          background: url(/assets/img/event-02.jpg) center/cover;
+        }
+      }
+
+      .eventright {
+        grid-area: c;
       }
     }
 
     .eventright {
-      grid-area: c;
-      display: grid;
-      grid-template-columns: 30% 70%;
-    }
-  }
-
-  .eventright{
-    background: url(/assets/img/event-03.jpg) center/cover;
-    width: 90%;
-
-    .eventrightbox{
+      background: url(/assets/img/event-03.jpg) center/cover;
+      width: 97%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      width: 400px;
-      margin: 20%;
-      background: $white1;
-      position: relative;
+      align-items: center;
 
-      &::before{
-        content: "15 Juillet";
-        text-align: center;
-        padding: 15px;
-        height: 40px;
-        width: 40px;
-        background: $black2;
-        color: $white1;
-        position: absolute;
-        top: 0%;
-       
-      }
+      .eventrightbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+        background: $white1;
+        position: relative;
 
-      p{
-        font-family: $fontR;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        font-weight: lighter;
-      }
-
-      address{
-        font-family: $fontR;
-        color: rgba(0, 0, 0, 0.53);
-        
-      }
-      
-      button{
-        font-family: $fontP;
-        border: none;
-        background: transparent;
-        text-transform: uppercase;
-        width: 50%;
-        margin-top: 50px;
-
-        &:hover{
-          cursor: pointer;
-          border: 1px solid $black2;
+        &::before {
+          content: "15 Juillet";
+          text-align: center;
+          padding: 15px;
+          height: 40px;
+          width: 40px;
+          background: $black2;
+          color: $white1;
+          position: absolute;
+          top: 0%;
         }
 
+        p {
+          font-family: $fontR;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          font-weight: lighter;
+        }
+
+        address {
+          font-family: $fontR;
+          color: rgba(0, 0, 0, 0.53);
+        }
+
+        button {
+          font-family: $fontP;
+          border: none;
+          background: transparent;
+          text-transform: uppercase;
+          width: 50%;
+          margin-top: 50px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
-
-
     }
   }
-}
+
+  .bottombottom {
+    padding: 100px;
+    position: relative;
+
+    .bottombox {
+      background: $white1;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 80px;
+      align-items: center;
+      position: absolute;
+      top: 0%;
+      right: 50%;
+      transform: translateX(50%);
+
+      &::before {
+        content: "";
+        height: 50px;
+        width: 50px;
+        background: url(/assets/img/avatar-02.jpg);
+        background-size: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: -10%;
+      }
+      p {
+        font-size: $fontR;
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      h5 {
+        font-family: $fontP;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+      }
+
+      h6 {
+        font-family: $fontR;
+        color: $color1;
+        font-size: 0.8rem;
+        font-weight: lighter;
+      }
+    }
   }
+
+  .map {
+    width: 100%;
+    height: 400px;
+    background: url(/assets/img/gmap.jpg) center/cover;
+  }
+}

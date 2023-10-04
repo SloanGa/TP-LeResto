@@ -3,6 +3,12 @@ nav {
   justify-content: space-between;
   padding: 10px 10%;
 
+  @media screen and (max-width: 900px) {
+    li {
+      display: none;
+    }
+  }
+
   .resto {
     color: $white1;
     font-family: $fontA;
